@@ -61,7 +61,7 @@ This is a **passive scan** and safe for CI/CD pipelines.
 ```bash
 docker run --rm \
   -v $(pwd)/zap-reports:/zap/wrk \
-  -t owasp/zap2docker-stable \
+  -t zaproxy/zap-stable \
   zap-baseline.py \
   -t http://172.17.0.1:3000 \
   -r zap-report.html
